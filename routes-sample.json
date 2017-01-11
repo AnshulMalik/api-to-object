@@ -1,0 +1,86 @@
+{
+    "defines": {
+        "constants": {
+            "host": "localhost",
+            "port": 3000
+        },
+        "params": {
+            "token": {
+                "type": "String",
+                "required": false,
+                "validation": "",
+                "description": ""
+            },
+            "idToken": {
+                "type": "String",
+                "required": false,
+                "validation": "",
+                "description": "ID token obtained from google login"
+            },
+            "username": {
+                "type": "String",
+                "required": true,
+                "validation": "",
+                "description": ""
+            },
+            "password": {
+                "type": "String",
+                "required": true,
+                "validation": "",
+                "description": ""
+            },
+            "teamName": {
+                "type": "String",
+                "required": true,
+                "validation": "",
+                "description": ""
+            },
+            "eventId": {
+                "type": "Number",
+                "required": true,
+                "validation": "",
+                "description": ""
+            }
+        }
+    },
+    "api": {
+        "authorization": {
+            "user-login": {
+                "url": "/api/user/login",
+                "method": "POST",
+                "params": {
+                    "idToken": null
+                },
+                "description": "Login the user"
+            },
+            "admin-login": {
+                "url": "/api/admin/login",
+                "method": "POST",
+                "params": {
+                    "username": null,
+                    "password": null
+                }
+            }
+        },
+        "teams": {
+            "create": {
+                "url": "/api/teams",
+                "method": "POST",
+                "params": {
+                    "token": null,
+                    "teamName": null,
+                    "eventId": null
+                }
+            }
+        },
+        "events": {
+            "get-all": {
+                "url": "/api/events",
+                "method": "GET",
+                "params": {
+
+                }
+            }
+        }
+    }
+}

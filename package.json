@@ -1,0 +1,32 @@
+{
+  "name": "api-to-object",
+  "version": "0.0.1",
+  "description": "Converts given API into functions",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com:AnshulMalik/api-to-object.git"
+  },
+  "bugs": {
+    "url": "https://github.com/AnshulMalik/api-to-object/issues"
+  },
+  "homepage": {
+    "url": "https://github.com/AnshulMalik/api-to-object#readme"
+  },
+  "tags": [
+    "http",
+    "https",
+    "api",
+    "functions",
+    "node",
+    "nodejs"
+  ],
+  "engines": {
+      "node": ">4"
+  },
+  "author": "Anshul <malikanshul29@gmail.com>",
+  "license": "ISC"
+}
